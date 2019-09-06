@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uPR-EK-nnS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="eOY-Q7-eOw">
+            <objects>
+                <viewController id="URf-98-tkD" customClass="LoginViewController" customModule="FreshNAroma" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MqK-Ib-4Co">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Arr-My-Zhh">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loinLogo" translatesAutoresizingMaskIntoConstraints="NO" id="jrE-1s-fbw">
+                                        <rect key="frame" x="67.5" y="50" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="OIh-Y0-J1z"/>
+                                            <constraint firstAttribute="height" constant="128" id="tGh-DL-x35"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pRT-Ek-Ba3">
+                                        <rect key="frame" x="8" y="188" width="359" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="DSF-gq-SRM"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eAf-km-4D1">
+                                        <rect key="frame" x="8" y="238" width="359" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="MQU-Cr-gcM"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="pRT-Ek-Ba3" secondAttribute="trailing" constant="8" id="0k2-7p-hPH"/>
+                                    <constraint firstItem="jrE-1s-fbw" firstAttribute="top" secondItem="Arr-My-Zhh" secondAttribute="top" constant="50" id="HXo-L9-Bti"/>
+                                    <constraint firstItem="eAf-km-4D1" firstAttribute="leading" secondItem="Arr-My-Zhh" secondAttribute="leading" constant="8" id="KNO-0k-AKu"/>
+                                    <constraint firstItem="jrE-1s-fbw" firstAttribute="centerX" secondItem="Arr-My-Zhh" secondAttribute="centerX" id="Pye-e1-dZd"/>
+                                    <constraint firstItem="pRT-Ek-Ba3" firstAttribute="top" secondItem="jrE-1s-fbw" secondAttribute="bottom" constant="10" id="XTV-6v-DrQ"/>
+                                    <constraint firstItem="pRT-Ek-Ba3" firstAttribute="leading" secondItem="Arr-My-Zhh" secondAttribute="leading" constant="8" id="hOj-l2-2EZ"/>
+                                    <constraint firstItem="eAf-km-4D1" firstAttribute="top" secondItem="pRT-Ek-Ba3" secondAttribute="bottom" id="k0L-bE-NeY"/>
+                                    <constraint firstAttribute="trailing" secondItem="eAf-km-4D1" secondAttribute="trailing" constant="8" id="kNY-71-A7O"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RV8-bX-z2U" firstAttribute="bottom" secondItem="Arr-My-Zhh" secondAttribute="bottom" id="5zH-8l-rKU"/>
+                            <constraint firstItem="Arr-My-Zhh" firstAttribute="top" secondItem="RV8-bX-z2U" secondAttribute="top" id="Bv0-9N-QgX"/>
+                            <constraint firstItem="RV8-bX-z2U" firstAttribute="trailing" secondItem="Arr-My-Zhh" secondAttribute="trailing" id="ejN-IO-x9I"/>
+                            <constraint firstItem="Arr-My-Zhh" firstAttribute="leading" secondItem="RV8-bX-z2U" secondAttribute="leading" id="fPJ-bA-GEc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RV8-bX-z2U"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wei-kJ-ZgO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D2f-MQ-KBY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="670" y="11"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nd8-qv-NOr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uPR-EK-nnS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wCO-XY-KVW">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="URf-98-tkD" kind="relationship" relationship="rootViewController" id="uO1-gx-z3i"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="162-ib-BdW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12" y="11.244377811094454"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="loinLogo" width="113" height="89"/>
+    </resources>
+</document>

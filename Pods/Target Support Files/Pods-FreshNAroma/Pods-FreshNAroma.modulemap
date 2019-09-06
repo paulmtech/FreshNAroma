@@ -1,0 +1,6 @@
+framework module Pods_FreshNAroma {
+  umbrella header "Pods-FreshNAroma-umbrella.h"
+
+  export *
+  module * { export * }
+}
